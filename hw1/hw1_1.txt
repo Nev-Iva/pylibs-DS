@@ -1,0 +1,25 @@
+import numpy as np
+
+
+# #### Задание 1
+ 
+a = np.array([[1, 6], [2, 8], [3, 11], [3, 10], [1, 7]])
+a
+mean_a = np.mean(a, axis = 0) 
+mean_a
+
+
+# #### Задание 2
+
+a_centered = np.subtract(a, mean_a)
+a_centered
+
+
+# #### Задание 3 
+
+a_centered_sp = np.dot(a_centered[:, 0], a_centered[:, 1])
+a_centered_sp
+N = a.shape[0]
+N
+div_res = a_centered_sp / (N - 1)
+div_res
